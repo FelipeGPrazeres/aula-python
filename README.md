@@ -2,4 +2,6 @@
 
 ## Tópico da aula de hoje: Versionamento
 
-### Teste
+### Resumo
+
+Nesta aula subimos nosso primeiro projeto no GitHub
