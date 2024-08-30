@@ -1,2 +1,2 @@
 
-    print("Ana não comprou bolos suficientes")
+docemin = 600

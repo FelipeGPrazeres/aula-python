@@ -54,29 +54,29 @@ pizzamin = 10
 bebmin = 12
 bolomin = 5
 docemin = 600
-
+print("################################################ \n")
 if diaFesta == dia:
-    print("Ana está fazendo as compras no dia da festa")
-if diaFesta != dia:
-    print("Ana não está fazendo as compras no dia da festa")
-print("################################################")
+    print(" Ana está fazendo as compras no dia da festa \n")
+else:
+    print("Ana não está fazendo as compras no dia da festa \n")
+print("################################################ \n")
 if(pizzamin > ppizza):
-    print("Ana não comprou pizzas suficientes")
-if(pizzamin <= ppizza):
-    print("Ana comprou pizzas suficientes")
-print("################################################")
+    print("Ana não comprou pizzas suficientes \n")
+else:
+    print("Ana comprou pizzas suficientes \n")
+print("################################################ \n")
 if(bebmin > pbeb):
-    print("Ana não comprou bebidas suficientes")
-if(bebmin <= pbeb):
-    print("Ana comprou bebidas suficientes")
-print("################################################")
+    print("Ana não comprou bebidas suficientes \n")
+else:
+    print("Ana comprou bebidas suficientes \n")
+print("################################################ \n")
 if(bolomin > pbol):
-    print("Ana não comprou bolos suficientes")
-if(bolomin <= pbol):
-    print("Ana comprou bolos suficientes")
-print("################################################")
+    print("Ana não comprou bolos suficientes \n")
+else:
+    print("Ana comprou bolos suficientes \n")
+print("################################################ \n")
 if(docemin > pdoc):
-    print("Ana não comprou doces suficientes")
-if(docemin <= pdoc):
-    print("Ana comprou doces suficientes")
-print("################################################")
+    print("Ana não comprou doces suficientes \n")
+else:
+    print("Ana comprou doces suficientes \n")
+print("################################################ \n")
