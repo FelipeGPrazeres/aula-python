@@ -1,21 +1,13 @@
 #Variáveis do preço
-precos = [100,200,300]
-multiplicadorDesconto = 0.1
-desconto = 0
-total = 0
-valorFinal = 0
-
+precosProdutos = [100,200,300]
 #Soma do total, float para inserção de decimal
-total = float(sum(precos))
-
+totalPreco = float(sum(precosProdutos))
+print(f"Total antes do desconto: R$ {totalPreco}")
 #IF cálculo do desconto (total*0.1)
-if total > 500:
-    desconto = total*multiplicadorDesconto
-
-#Cálculo do valor final
-valorFinal = total-desconto
-
+if totalPreco > 500:
+    totalPreco = totalPreco - (totalPreco*0.1)
 #Output do Total, Desconto e Valorfinal
-print(f"Total antes do desconto: R$ {total}")
-print(f"Desconto aplicado: R$ {desconto}")
-print(f"Total com desconto: R$ {valorFinal}")
+    print(f"Total com desconto: R$ {totalPreco}")
+else:
+    diferenca = 500 - totalPreco
+    print(f"Adicione mais {diferenca} em produtos para ganhar um desconto de 10%!")
