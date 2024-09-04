@@ -1,16 +1,21 @@
 #Variáveis do preço
-p1 = 100
-p2 = 200
-p3 = 300
+precos = [100,200,300]
+multiplicadorDesconto = 0.1
+desconto = 0
+total = 0
+valorFinal = 0
 
-t = p1 + p2 + p3
+#Soma do total, float para inserção de decimal
+total = float(sum(precos))
 
-desc = 0
-if t>500:
-    desc = t*0.1
+#IF cálculo do desconto (total*0.1)
+if total > 500:
+    desconto = total*multiplicadorDesconto
 
-r = t - desc
+#Cálculo do valor final
+valorFinal = total-desconto
 
-print("Total antes do desconto:", t)
-print("Desconto aplicado:", desc)
-print("Total com desconto:", r)
+#Output do Total, Desconto e Valorfinal
+print(f"Total antes do desconto: R$ {total}")
+print(f"Desconto aplicado: R$ {desconto}")
+print(f"Total com desconto: R$ {valorFinal}")

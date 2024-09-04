@@ -6,5 +6,4 @@ def verEnt(numero):
         return "Seu número é negativo"
     else:
         return "Seu número é zero"
-verEnt(numero)
 print(verEnt(numero))
