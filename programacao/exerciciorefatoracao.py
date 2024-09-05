@@ -2,7 +2,7 @@
 precosProdutos = [100,200,300]
 #Soma do total, float para inserção de decimal
 totalPreco = float(sum(precosProdutos))
-print(f"Total antes do desconto: R$ {totalPreco}")
+print(f"Total: R$ {totalPreco}")
 #IF cálculo do desconto (total*0.1)
 if totalPreco > 500:
     totalPreco = totalPreco - (totalPreco*0.1)
