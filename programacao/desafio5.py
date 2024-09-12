@@ -1,0 +1,7 @@
+tupla = (10,20,0)
+print(tupla)
+novox = int(input("Novo x "))
+novoy = int(input("Novo y "))
+novoz = int(input("Novo z "))
+tupla = (novox, novoy, novoz)
+print(f" X: {tupla[0]} Y: {tupla[1]} Z: {tupla[2]}")
