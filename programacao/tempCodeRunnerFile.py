@@ -1,2 +1,1 @@
-
-def divisao(a,b):
+i

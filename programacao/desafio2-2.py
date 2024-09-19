@@ -1,3 +1,4 @@
+operacoesPossiveis = ["+","-","*","/"]
 def soma(a,b):
     """
     Realiza a soma dos valores 1 e 2
@@ -26,7 +27,8 @@ def main():
     valor1 = float(input("Digite o primeiro número: "))
     valor2 = float(input("Digite o segundo número: "))
     tipoOperacao = input("Qual o tipo de operação? (+,-,*,/)")
-
+    if tipoOperacao not in operacoesPossiveis:
+        print("Sua operação não existe!")
     if not isinstance(valor1, str) or isinstance(valor2, str):
         if tipoOperacao == "+":
             print(f"A soma desses valores é {soma(valor1,valor2)}")
@@ -35,7 +37,9 @@ def main():
         elif tipoOperacao == "*":
             print(f"A multiplicação desses valores é {multiplicacao(valor1,valor2)}")
         elif tipoOperacao == "/":
-            print(f"A divisão desses valores é {divisao(valor1,valor2)}")
+            if valor2 == 0:
+                print("Divisão por 0 não é possível!")
+            else:print(f"A divisão desses valores é {divisao(valor1,valor2)}")
     else:
         print(isinstance(valor1, str))
         print(isinstance(valor2, str))

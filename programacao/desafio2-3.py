@@ -1,10 +1,13 @@
-def maiuscula(stringinput):
+def manipularString(stringinput):
     stringmaiuscula = stringinput.upper()
-def minuscula(stringinput):
     stringminuscula = stringinput.lower()
-def qttcaracteres(stringinput):
     quantidadeCaracteres = len(stringinput)
+    return (stringmaiuscula, stringminuscula, quantidadeCaracteres)
+
 def main():
     stringinput = input("Digite a string ")
-    print(f"Maiusculas {maiuscula}, Minuscula {minuscula}, quantidade de letras {qttcaracteres}")
+    resultadoMaiuscula, resultadoMinuscula, resultadoCaracteres = manipularString(stringinput)
+    print(f"Sua palavra em maiusculo: {resultadoMaiuscula}")
+    print(f"Sua palavra em minusculo: {resultadoMinuscula}")
+    print(f"Totais de caracteres da sua palavra: {resultadoCaracteres}")
 main()
