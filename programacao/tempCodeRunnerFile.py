@@ -1,1 +1,2 @@
-i
+
+        elif operacao.upper() == "N":
